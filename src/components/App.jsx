@@ -1,13 +1,12 @@
 
 import { Routes, Route } from 'react-router-dom';
 import css from './Home/home.module.css';
-
-const Movies = () => import('./Movies/Movies');
-const Layout = () => import('./Layout/Layout');
-const Home = () => import('./Home/Home');
-const MovieDetails = () => import('./Movies/MovieDetails');
-const MovieCast = () => import('./Movies/MoviesCast');
-const MoviesReviews = () => import('./Movies/MoviesReviews');
+import Movies from './Movies/Movies';
+import Layout from './Layout/Layout';
+import Home from './Home/Home';
+import MovieDetails from './Movies/MovieDetails';
+import MovieCast from './Movies/MoviesCast';
+import MoviesReviews from './Movies/MoviesReviews';
 
 export const App = () => {
   return (
@@ -26,9 +25,11 @@ export const App = () => {
   );
 };
 
+
 // import { lazy } from 'react';
 // import { Routes, Route } from 'react-router-dom';
 // import css from './Home/home.module.css';
+
 
 // const Movies = lazy(() => import('./Movies/Movies'));
 // const Layout = lazy(() => import('./Layout/Layout'));
